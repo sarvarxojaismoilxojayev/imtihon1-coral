@@ -1,0 +1,38 @@
+.header {
+    position: sticky;
+    top: 0px;
+    background:  #F8F9FA;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(160, 155, 155);
+        padding-bottom: 0.20rem;
+        background:  #F8F9FA;
+        padding-top: 20px;
+    
+        ul {
+            user-select: none;
+            .nav-link {
+                // user-select: none;
+                &:active {
+                    outline: 1px solid rgb(145, 143, 143);
+                    border-radius: 10px;
+                }
+    
+                &:hover {
+                    color: #333;
+                }
+            }
+    
+            li {
+                display: inline-block;
+    
+                a {
+                    color: #333;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
